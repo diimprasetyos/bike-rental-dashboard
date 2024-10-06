@@ -34,7 +34,7 @@ hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 
 # Membuat dropdown untuk pilihan tahun
 with st.sidebar:
-    st.image("https://link-logo-perusahaan.com/logo.png")
+    st.image("https://media.istockphoto.com/id/854733622/vector/bicycle-icon.jpg?s=612x612&w=0&k=20&c=cu34k4KEV5VYWwwVbMAmPogLJmh-OBITXEd1d9rWfrw=")
     selected_year = st.selectbox(
         'Pilih Tahun',
         options=[2011, 2012],
