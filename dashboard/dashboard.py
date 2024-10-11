@@ -25,8 +25,8 @@ def create_hourly_rentals_df(df):
     return hourly_rentals_df
 
 # Load the datasets
-day_df = pd.read_csv("data/day.csv")
-hour_df = pd.read_csv("data/hour.csv")
+day_df = pd.read_csv("dashboard/day.csv")
+hour_df = pd.read_csv("dashboard/hour.csv")
 
 # Mengubah kolom 'dteday' menjadi tipe datetime
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
@@ -34,7 +34,7 @@ hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 
 # Membuat dropdown untuk pilihan tahun
 with st.sidebar:
-    st.image("https://media.istockphoto.com/id/854733622/vector/bicycle-icon.jpg?s=612x612&w=0&k=20&c=cu34k4KEV5VYWwwVbMAmPogLJmh-OBITXEd1d9rWfrw=")
+    st.image("https://logowik.com/content/uploads/images/black-bicycle8763.logowik.com.webp")
     selected_year = st.selectbox(
         'Pilih Tahun',
         options=[2011, 2012],
